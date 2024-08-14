@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 100; */
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     /* this will add height and width and make the page responsive */
+}
+.navbar{
+    background-color: rgb(47, 156, 47);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar .logo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(33,71,8);
+    font-weight: 800;
+}
+.navbar .logo span{
+    color:rgb(236, 236, 85) ;
+    font-size: 2rem;
+}
+.nav-links{
+    display: flex;
+    float: right;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(215, 215, 44);
+    margin: 10px;
+}
+.nav-links li a:hover{
+    color: rgb(33,71,8);
+}
+.section{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(veggi.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section .container{
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+   border-radius: 20px;
+}
+.section .container h1{
+    color: rgb(94, 217, 18);
+    font-size: 2rem;
+    margin: 40px 0;
+}
+.section .container p{
+    color: rgb(22, 153, 22);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0;
+    line-height: 2;
+}
+.btn{
+    background-color: rgb(33,71,8);
+    padding: 10px 30px;
+    border: none;
+    color: rgb(215, 215, 44);
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5%;
+    transition: background-color 0.8s;
+}
+.btn:hover{
+    background-color: rgb(215, 215, 44);
+    color: rgb(33,71,8);
+}
+@media(max-width:768px){
+    .navbar{
+      flex-direction: column;
+      align-items: start;
+    }
+    .nav-links{
+      flex-direction: column;
+    }
+    .section .container h1{
+      font-size:1.8rem;
+    }
+  }
+  @media(max-width:375px){
+    .section .container h1{
+        font-size: 1rem;
+    }
+    .section .container p{
+        font-size: 0.8rem;
+    }
+    .btn{
+        font-size: 12px;
+        margin-left:10px;
+    }
+    .navbar .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        padding: 5px;
+        font-size: 1rem;
+    }
+  }
+
+
+  /* login form */
+  .login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+    background-image: url(veggi.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .login-card{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    width: 800px;
+
+  }
+  .input-container{
+    text-align: left;
+    margin-bottom: 20px;
+  
+  }
+  h2{
+    text-align: center;
+    margin-bottom: 20px;
+ 
+  }
+  .input-container label{
+    font-size: 16px;
+    color: rgb(224,224,93);
+    margin-bottom: 20px;
+    display: block;
+    
+  }
+  .login-container input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color: rgb(33,71,8);
+
+  }
+  .btn1{
+    background-color: rgb(33,71,8);
+    padding: 10px 30px;
+    border: none;
+    color: rgb(224,224,93);
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: background-color 0.8s;
+  }
+  .sign-link{
+    margin-top: 20px;
+    color: yellow;
+    padding: 20px;
+  }
+  .sign-link a{
+    text-decoration: none;
+    color: rgb(33,71,8);
+    font-weight: 600;
+  }
+  .sign-link a:hover{
+    color:rgb(224,224,93) ;
+  }
+
